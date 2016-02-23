@@ -14,5 +14,8 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/jhi5/socket-basics/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3"
   }
 }
