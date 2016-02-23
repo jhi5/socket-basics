@@ -16,6 +16,8 @@
     "url": "https://github.com/jhi5/socket-basics/issues"
   },
   "dependencies": {
-    "express": "~4.13.3"
+    "express": "~4.13.3",
+    "socket.io": "~1.3.7",
+    "node-gyp": "~3.3.0"
   }
 }
