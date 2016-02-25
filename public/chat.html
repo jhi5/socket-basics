@@ -3,23 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Socket Practice</title>
-
+	<link rel="stylesheet" href="./css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="./css/styles.css"></link>
 </head>
 <body>
-	<a href="/index.html">Change Settings</a>
-	<h1 class="room-title">Room Name</h1>
-	<div class="messages">
-		<!-- where the messages get displayed -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 well">
+				<a href="/index.html">Change Settings</a>
+				<h1 class="room-title">Room Name</h1>
+				<ul class="messages list-group">
+					<!-- where the messages get displayed -->
 
-	</div>
-	<form id="message-form">
-		<input type="text" name="message"/>
-		<input type="submit"/>
-	</form>
-	<script src="/js/jquery-2.2.1.min.js"></script>
-	<script src="/js/socket.io-1.3.7.js"></script>
-	<script src="/js/moment.js"></script>
-	<script src="/js/QueryParams.js"></script>
-	<script src="/js/app.js"></script>
-</body>
-</html>
+				</ul>
+				<form id="message-form">
+					<div class="form-group">
+						<div class="input-group">
+							<span class='input-group-addon'>
+								<i class="glyphicon glyphicon-comment"></i>
+							</span>
+							<input type="text" name="message" class="form-control"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-block btn-default"/>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/jquery-2.2.1.min.js"></script>
+		<script src="/js/socket.io-1.3.7.js"></script>
+		<script src="/js/moment.js"></script>
+		<script src="/js/QueryParams.js"></script>
+		<script src="/js/app.js"></script>
+	</body>
+	</html>
